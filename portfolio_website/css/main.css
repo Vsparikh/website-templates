@@ -16,11 +16,11 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  color: var(--platinum);
+  font-family: 'Source Code Pro', sans-serif;
 }
 
 .navbar {
-  position: fixed;
   background-color: var(--orange-web);
   overflow: hidden;
   width: 100vw;
@@ -36,6 +36,7 @@ h1, h2, h3 {
   font-weight: bold;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar a:hover {
