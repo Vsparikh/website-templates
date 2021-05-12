@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/6a2b660744.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>J. Random Hacker</title>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar" id="navigation">
+        <a href="#top">
+            <i class="fa fa-home" class="nav-icon"></i>
+            <span class="nav-text"> Home </span>
+        </a>
+        <a href="#">
+            <i class="fa fa-user"></i> 
+            <span class="nav-text"> About </span>
+        </a>
+        <a href="#">
+            <i class="fa fa-laptop-code"></i> 
+            <span class="nav-text"> Experience </span>
+        </a>
+        <a href="#">
+            <i class="fa fa-project-diagram"></i> 
+            <span class="nav-text"> Projects </span>
+        </a>
+        <a href="#">
+            <i class="fa fa-address-card"></i> 
+            <span class="nav-text"> Contact </span>
+        </a>
+        <a href="javascript:void(0);" class="navbar-hamburger" onclick="displayNavMenu()">
+            <i class="fa fa-bars"></i> </a>
+
+        <script>
+            function displayNavMenu() {
+                var nav = document.getElementById("navigation");
+                if (nav.className == "navbar") {
+                    nav.className += " responsive";
+                } else {
+                    nav.className = "navbar";
+                }
+            }
+        </script>
+    </nav>
+
+
+
+</body>
+
+</html>

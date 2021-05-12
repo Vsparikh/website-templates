@@ -1,0 +1,76 @@
+html {
+  scroll-behavior: smooth;
+  /*Color Palette*/
+  --black: #000000ff;
+  --oxford-blue: #14213dff;
+  --orange-web: #fca311ff;
+  --platinum: #e5e5e5ff;
+  --white: #ffffffff;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0;
+  font-family: 'Source Code Pro', sans-serif;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--orange-web);
+  overflow: hidden;
+  width: 100vw;
+}
+
+.navbar a {
+  float: left;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  background-color: var(--oxford-blue);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar .navbar-hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.navbar-hamburger {
+    display: block;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .navbar-hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
