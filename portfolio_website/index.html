@@ -28,20 +28,20 @@
             <i class="fa fa-home" class="nav-icon"></i>
             <span class="nav-text"> Home </span>
         </a>
-        <a href="#">
-            <i class="fa fa-user"></i> 
+        <a href="#About">
+            <i class="fa fa-user"></i>
             <span class="nav-text"> About </span>
         </a>
         <a href="#">
-            <i class="fa fa-laptop-code"></i> 
+            <i class="fa fa-laptop-code"></i>
             <span class="nav-text"> Experience </span>
         </a>
         <a href="#">
-            <i class="fa fa-project-diagram"></i> 
+            <i class="fa fa-project-diagram"></i>
             <span class="nav-text"> Projects </span>
         </a>
         <a href="#">
-            <i class="fa fa-address-card"></i> 
+            <i class="fa fa-address-card"></i>
             <span class="nav-text"> Contact </span>
         </a>
         <a href="javascript:void(0);" class="navbar-hamburger" onclick="displayNavMenu()">
@@ -59,12 +59,77 @@
         </script>
     </nav>
 
+    <section class="home">
+        <div class="home-background">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <h1>Hi! I am J. Random Hacker</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, placeat! Cumque maxime quasi nemo ex itaque sed unde placeat! Voluptatibus dicta, officiis quae nesciunt alias voluptate enim quos dolorem, libero accusantium dolor dolore velit atque optio quia magni. Labore nam voluptate amet, hic numquam alias? Ipsum deleniti quas dolorum sint.</p> 
+        </div>
+    </section>
+
+    <section class="about-content" id="About">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="skill-box">
+                <div class="skill-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum excepturi quod quibusdam animi, repellendus officia quasi quas? Expedita, unde cumque!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse sapiente possimus debitis blanditiis qui unde id!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ut ducimus excepturi iure quam hic saepe autem perspiciatis ipsa tempore voluptate atque.</p>
+                </div>
+            
+                <div class="skill-sphere">
+                    <canvas id="skill-canvas"></canvas>
+                    <script src="sphere.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-    <div class="hero" id = "Home">
-        <h1>Hi! I am Here</h1>
+    <section class="experiance-content" id="Work-experiance">
+        <div class="container">
+            <h1>Experience</h1>
 
-    </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'job1')">Lorem, ipsum.</button>
+                <button class="tablinks" onclick="openTab(event, 'job2')">Lorem, ipsum.</button>
+                <button class="tablinks" onclick="openTab(event, 'job3')">Lorem, ipsum.</button>
+            </div>
 
+            <div class="tab-content" id="job1">
+                <h2>Software Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+            </div>
+            <div class="tab-content" id="job2">
+                <h2>Software Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+            </div>
+            <div class="tab-content" id="job3">
+                <h2>Software Developer</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, eveniet!</p>
+            </div>
+        </div>
+    </section>
 
 </body>
 
